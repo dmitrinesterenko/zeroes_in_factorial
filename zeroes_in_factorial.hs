@@ -16,5 +16,12 @@ factorial 0 = 1
 factorial x = x * factorial (x-1) 
 -- Combine the elements together. From inside out: compute factorial, convert to string, reverse the string and compute the 0s at the beginning of the string 
 countZeroes x = zeroes (reverse (show (factorial x)))
+-- Ok Let's get some input and show some results
+main = do
+	putStrLn "Enter a number to compute it's factorial and count the number of 0s at the end"
+	number <- getLine
+	let zeroesFound = countZeroes (read number)
+	putStrLn ("The number of zeroes is " ++ (show zeroesFound))
+
 
 

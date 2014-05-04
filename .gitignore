@@ -1,5 +1,7 @@
+zeroes_in_factorial
 dist
 cabal-dev
+*.swp
 *.o
 *.hi
 *.chi
